@@ -1,0 +1,203 @@
+{
+	"FOYER": {
+		"name": "Foyer",
+		"desc": "Holloween night. The spookiest of nights. And you happen to be trapped in the foyer of a haunted mansion, the front door locked tight behind you. You must escape!\nYou see a door to your front and left, and an open doorway to the right.",
+		"exits": [{
+			"exit": "RIGHT",
+			"target": "STAIRSDOWN"
+		}, {
+			"exit": "FRONT",
+			"target": "DINERM"
+		}, {
+			"exit": "LEFT",
+			"target": "LIVRM"
+		}],
+		"items": []
+	},
+	"STAIRSDOWN": {
+		"name": "Bottom of the Stairwell",
+		"desc": "The bottom of a flight of rickety wooden stairs. When you're at rock bottom, the only way to go is up, right?",
+		"exits": [{
+			"exit": "CLIMB",
+			"target": "STAIRSUP"
+		}, {
+			"exit": "BACK",
+			"target": "FOYER"
+		}],
+		"items": []
+	},
+	"DINERM": {
+		"name": "Dining Room",
+		"desc": "A dining room with a large table, covered in rotten food, and with only two lonely chairs. Smells nasty.\nThere's another door in front of you, one behind, and a flimsy looking one to the right.",
+		"exits": [{
+			"exit": "FRONT",
+			"target": "BACKYD"
+		}, {
+			"exit": "BEHIND",
+			"target": "LIVRM"
+		}, {
+			"exit": "RIGHT",
+			"target": "KITCH"
+		}],
+		"items": []
+	},
+	"LIVRM": {
+		"name": "Living Room",
+		"desc": "A living room with a cold fireplace, a moth-eaten chair, and an old teddy bear that seems to have had its insides violently removed.\nAs you stand in the corner, there's a door on either side of you.",
+		"exits": [{
+			"exit": "LEFT",
+			"target": "FOYER"
+		}, {
+			"exit": "RIGHT",
+			"target": "DINERM"
+		}],
+		"items": []
+	},
+	"KITCH": {
+		"name": "Kitchen",
+		"desc": "A kitchen with knives and rot strewn about. If the dining room smelled bad, this is ten times worse.\nThere's a heavy metel door to the left. It eminates heat.",
+		"exits": [{
+			"exit": "BACK",
+			"target": "DINERM"
+		}, {
+			"exit": "LEFT",
+			"target": "BOILRM"
+		}],
+		"items": []
+	},
+	"BOILRM": {
+		"name": "Boiler Room",
+		"desc": "The door closes with an unsettling thunk, and  you descend some stairs. At the bottom is a boiler, somehow still functioning... It'S getting really hot down here...",
+		"exits": [{
+			"exit": "BACK",
+			"target": "KITCH"
+		}, {
+			"exit": "STAY",
+			"target": "DEAD"
+		}],
+		"items": []
+	},
+	"BACKYD": {
+		"name": "Backyard",
+		"desc": "Finally! Fresh air! There's a wilted garden here... And some graves.\nThankfully, there are also paths to your right and left.",
+		"exits": [{
+			"exit": "LEFT",
+			"target": "ZALLEY"
+		}, {
+			"exit": "RIGHT",
+			"target": "DALLEY"
+		}],
+		"items": []
+	},
+	"ZALLEY": {
+		"name": "Path",
+		"desc": "As you walk down the path, half-decayed hands spring from the dirt and grab at you! How will you defend yourself?",
+		"exits": [{
+			"exit": "KICK",
+			"target": "END"
+		}, {
+			"exit": "PUNCH",
+			"target": "DEAD"
+		}],
+		"items": []
+	},
+	"DALLEY": {
+		"name": "Alleyway",
+		"desc": "As you exit the backyard and turn into the alley, you see an old doghouse, with a chain running from it... To a sleeping, spectral monster dog.\nThe chains are bunched up by the doghouse. How do you pass? ",
+		"exits": [{
+			"exit": "DOG",
+			"target": "END"
+		}, {
+			"exit": "HOUSE",
+			"target": "DEAD"
+		}],
+		"items": []
+	},
+	"STAIRSUP": {
+		"name": "Top of the Stairwell",
+		"desc": "The top of the stairs. You can see four doors and a window. Are windows doors? They are if you jump out them.",
+		"exits": [{
+			"exit": "FIRST DOOR ON THE RIGHT",
+			"target": "CLOS"
+		}, {
+			"exit": "SECOND DOOR ON THE RIGHT",
+			"target": "GRLRM"
+		}, {
+			"exit": "FIRST DOOR ON THE LEFT",
+			"target": "SECPAS"
+		}, {
+			"exit": "SECOND DOOR ON THE LEFT",
+			"target": "MASRM"
+		}, {
+			"exit": "WINDOW",
+			"target": "BACKYD"
+		}],
+		"items": []
+	},
+	"CLOS": {
+		"name": "Closet",
+		"desc": "You open the door cautiously... Suddenly, a skeleton jumps out with a trombone! It blasts four notes at you, jumps back in, and slams the door.",
+		"exits": [{
+			"exit": "ACCEPT",
+			"target": "STAIRSUP"
+		}],
+		"items": []
+	},
+	"GRLRM": {
+		"name": "Girl's Room",
+		"desc": "You open the door, entering what looks to be the room of a small girl. There are many stuffed animals strewn about in multile pieces.\nOut of the corner of your eye you think you spot a small girl, but when you turn, she's gone.",
+		"exits": [{
+			"exit": "BACK",
+			"target": "STAIRSUP"
+		}],
+		"items": []
+	},
+	"GSTRM": {
+		"name": "Guest Room",
+		"desc": "You open the door. This seems to be a guest room, though by the looks of it, it's never been used. Or has it?",
+		"exits": [{
+			"exit": "BACK",
+			"target": "STAIRSUP"
+		}, {
+			"exit": "INVESTIGATE",
+			"target": "SECPAS"
+		}],
+		"items": []
+	},
+	"MASRM": {
+		"name": "Master Room",
+		"desc": "You open the door, entering a master bedroom. It's in complete disarray. As you creep forwards, there's a bright flash and the ghost of a man appears!\n'Fool! Begone from my house or I shall tear your soul asunder!'",
+		"exits": [{
+			"exit": "CHALLENGE",
+			"target": "DEAD"
+		}, {
+			"exit": "FLEE",
+			"target": "STAIRSUP"
+		}],
+		"items": []
+	},
+	"SECPAS": {
+		"name": "Secret Passage",
+		"desc": "Aha! In the back wall is a secret door with a chute leading down! There's a thin black powder around it.",
+		"exits": [{
+			"exit": "DOWN",
+			"target": "LIVRM"
+		}, {
+			"exit": "BACK",
+			"target": "GSTRM"
+		}],
+		"items": []
+	},
+	"DEAD": {
+		"name": "end. You die in the most horrible way imaginable within the bounds of your current location.",
+		"desc": "",
+		"exits": [],
+		"items": []
+	},
+	"END": {
+		"name": "Street",
+		"desc": "FREEDOM! You run forth into the road, past trick-or-treaters. You glance back, only for the mansion to be gone, a contruction site in its place.\nThat's the last time you choose trick over treat!",
+		"exits": [],
+		"items": []
+	}
+}
